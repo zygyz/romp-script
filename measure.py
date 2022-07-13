@@ -102,12 +102,12 @@ def calculate_metrics(output_path: str, benchmark: str) -> dict:
 
   result = {
                'benchmark' : benchmark,
-               'original_memory' : original_memory_average,
-               'original_time' : original_time_average,
-               'instrument_memory' : instrument_memory_average, 
-               'instrument_time' : instrument_time_average,
-               'memory_overhead' : instrument_memory_average / original_memory_average, 
-               'time_overhead' : instrument_time_average / original_time_average, 
+               'original_memory_avg' : original_memory_average,
+               'original_time_avg' : original_time_average,
+               'instrument_memory_avg' : instrument_memory_average, 
+               'instrument_time_avg' : instrument_time_average,
+               'memory_overhead_avg' : instrument_memory_average / original_memory_average, 
+               'time_overhead_avg' : instrument_time_average / original_time_average, 
              }
   return result
     
